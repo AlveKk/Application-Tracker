@@ -123,11 +123,6 @@ application-tracker/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-
-**Paolo Alvezzola**
-- LinkedIn: [Paolo Alvezzola](https://linkedin.com/in/paoloalvezzola)
-
 ---
 
 *This project serves as a demonstration of modern PHP development practices with Symfony framework, focusing on practical file-based data management and clean web interface design.*
