@@ -140,12 +140,4 @@ The application uses Docker multi-stage builds:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-
-**Paolo Alvezzola**
-- LinkedIn: [Paolo Alvezzola](https://linkedin.com/in/paoloalvezzola)
-- Portfolio: [Application Tracker](https://github.com/AlveKk/application-tracker)
-
----
-
 *This project serves as a demonstration of modern PHP development practices with Symfony framework, focusing on practical file-based data management, clean web interface design, and professional DevOps practices with Docker containerization.*
