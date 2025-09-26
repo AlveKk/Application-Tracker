@@ -118,9 +118,6 @@ application-tracker/
 #### Security Considerations
 - **Auto-generated secrets** in development
 - **Manual APP_SECRET** required only for production
-- **Data persistence** via Docker volumes
-- **Port configuration** for different environments
-- **Path customization** for deployment flexibility
 
 ## 📄 License
 
