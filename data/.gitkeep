@@ -1,0 +1,2 @@
+# This file ensures the data directory is created in the repository
+# The actual Excel files are ignored by .gitignore

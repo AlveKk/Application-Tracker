@@ -1,0 +1,48 @@
+{# filepath: /Users/paoloalvezzola/Progetti/github cv/ApplicationTracker/templates/home/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1 class="card-title">{{ message }}</h1>
+                <p class="card-text">
+                    Track your job applications with ease using Excel-based storage.
+                </p>
+                <a href="#" class="btn btn-primary">View Applications</a>
+                <a href="#" class="btn btn-success">Add New Application</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">📊 Statistics</h5>
+                <p class="card-text">View your application statistics and progress.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">📁 Excel Management</h5>
+                <p class="card-text">Import/Export your application data.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">🔍 Search & Filter</h5>
+                <p class="card-text">Find applications quickly and efficiently.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

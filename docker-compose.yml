@@ -1,0 +1,37 @@
+services:
+  app:
+    build:
+      context: .
+      target: ${BUILD_TARGET:-development}
+    container_name: application-tracker-app
+    environment:
+      - APP_ENV=${APP_ENV}
+      - APP_DEBUG=${APP_DEBUG}
+      - APP_SECRET=${APP_SECRET}
+    volumes:
+      # Only source code - vendor/ stays in container
+      - ./src:/var/www/src:${VOLUME_MODE:-rw}
+      - ./config:/var/www/config:${VOLUME_MODE:-rw}
+      - ./templates:/var/www/templates:${VOLUME_MODE:-rw}
+      - ./public:/var/www/public:${VOLUME_MODE:-rw}
+      # Excel data storage for PhpSpreadsheet
+      - ${HOST_DATA_PATH:-./data}:/var/www/data:rw
+    networks:
+      - app-network
+
+  webserver:
+    image: nginx:alpine
+    container_name: application-tracker-nginx
+    ports:
+      - "${NGINX_PORT:-8000}:80"
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./public:/var/www/public:ro
+    networks:
+      - app-network
+    depends_on:
+      - app
+
+networks:
+  app-network:
+    driver: bridge

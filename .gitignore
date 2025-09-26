@@ -1,0 +1,54 @@
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/.env.dev
+/.env.test
+/.env.prod.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files (security)
+.env
+
+# Excel data files (keep structure, ignore content)
+/data/*.xlsx
+/data/*.xls
+/data/backups/
+!/data/.gitkeep
+
+# Docker overrides
+docker-compose.override.yml
+docker-compose.*.yml
+!docker-compose.yml
+
+# Composer
+composer.lock
+auth.json
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+node_modules/
